@@ -1,0 +1,6 @@
+PS C:\Users\marlo\Documents\myclub_project> env_club\scripts\activate
+(env_club) PS C:\Users\marlo\Documents\myclub_project> cd myclub_site
+(env_club) PS C:\Users\marlo\Documents\myclub_project\myclub_site> django-admin startproject PythonClub
+(env_club) PS C:\Users\marlo\Documents\myclub_project\myclub_site> cd PythonClub
+(env_club) PS C:\Users\marlo\Documents\myclub_project\myclub_site\PythonClub> python manage.py startapp Club
+(env_club) PS C:\Users\marlo\Documents\myclub_project\myclub_site\PythonClub>
