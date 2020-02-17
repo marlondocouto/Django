@@ -26,13 +26,13 @@ class MeetingMinutes(models.Model):
     #ABOVE: it refers to the previous table and it requires on what to do on delete
     #Meeting in parenthesis references the previous class.
     attendance=models.ManyToManyField(User)
-    minutes_text=models.TextField('Description')
+    minutes_text=models.TextField('Description', blank=True)
 
     def __str__(self):
         return self.meeting_id
 
     class Meta:
-        db_table='meeting minute'
+        db_table='meetingminutes'
         verbose_name_plural='meeting minutes'
 
 #next class:
