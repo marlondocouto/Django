@@ -1,0 +1,18 @@
+{%extends 'base.html' %} <!--python script-->
+{% block content%}
+
+<h2>Resources</h2>
+<table class="table">  <!-- this class is linked to the bootstraps for editing purposes-->
+<tr>
+    <th>Resource Name</th>
+    <th>Resource Description</th>
+</tr>
+{% for t in resource_list %} <!--loop for all item in the list-->
+    <tr><!-- creates one row for each item with name and description-->
+        <td>{{t.resource_name}}</td><!--these have to match the names in the models-->
+        <td>{{t.description}}</td>
+    </tr>
+    {% endfor %}
+</table>
+
+{% endblock %} <!-- python scripting for webpage-->
