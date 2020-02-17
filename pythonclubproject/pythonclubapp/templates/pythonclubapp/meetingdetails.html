@@ -1,0 +1,11 @@
+{% extends 'base.html' %} <!--python script-->
+{% block content%}
+
+<h2>{{meet.meeting_title}}</h2> <!--get the title-->
+<h3>Date: {{meet.meeting_date}}</h3> <!--get the date (this must be as named in the models-->
+<p>Time: {{meet.meeting_time}}</p>
+<p>Location: {{meet.meeting_location}}</p>
+<p>Agenda: {{meet.meeting_agenda}}</p>
+
+
+{% endblock %} <!-- python scripting for webpage-->
