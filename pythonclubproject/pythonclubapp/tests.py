@@ -43,12 +43,7 @@ class EventTest(TestCase):
     def test_table(self):
         self.assertEqual(str(Event._meta.db_table), 'event')
 
-#class IndexTest(TestCase):
-#    def test_view_url_accessible_by_name(self):
- #       response = self.client.get(everse('index'))
-  #      self.assertEqual(response.status_code,200)
-
-#class getResources(TestCase):
- #   def test_view_url_accessible_by_name(self):
-  #      response=self.client.get(reverse('resources'))
-   #     self.assertEqual(response.status_code,200)
+class MeetingMinutes_Form_Test(TestCase):
+    def test_typeform_is_valid(self):
+        form=MeetingMinutesTest(data={'attendance': "Marlon", 'minutes_text':"bla blah blah"})
+        self.assertTrue(form.is_valid())
