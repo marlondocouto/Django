@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+{% block content %}
+<h1>Product Types</h1>
+<table class='table'>
+ <tr>
+     <th>Stock Ticker</th>
+     <th>Stock High</th>
+     <th>Stock Low</th>
+     <th>Stock Buy Price</th>
+     <th>Buy Date</th>
+     <th>Buyer</th>
+     <th>Additional Info</th>
+ </tr>
+ {% for p in performances_list %}
+   <tr>
+       <td>{{ p.stockticker }}</td>
+       <td>{{ p.stockHighPrice }}</td>
+       <td>{{ p.stockLowPrice }}</td>
+       <td>{{ p.stockBuyPrice }}</td>
+       <td>{{ p.stockBuyDate }}</td>
+       <td>{{ p.user }}</td>
+       <td>{{ p.stockAdditionalInfo }}</td>
+   </tr>
+
+ {% endfor %}
+
+
+</table>
+
+
+{% endblock %}
